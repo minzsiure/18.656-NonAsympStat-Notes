@@ -47,9 +47,9 @@ but it is all extremely relevant and useful.
     * ie. $l_2$-operator norm is a matrix norm used to measure the distance between $\hat{\Sigma}$ and $\Sigma$ $$\||\hat{\Sigma}-\Sigma\||_2 := \sup_{u \neq 0} \frac{\|(\hat{\Sigma}-\Sigma)u\|_2}{\|u\|_2}$$
     * Under the classical law of large numbers, $\||\hat{\Sigma}-\Sigma\||_2$ converges to zero almost surely as $n \rightarrow \infty$.
 * **[High-dimensional asymtotics] We ask:** is this consistency preserved when $d \rightarrow \infty$?
-    * Suppose both $n$ and $d$ increase with their ratio $d/n=\alpha \in (0,1)$ remaining fixed. We run simulations for a random ensemble $\Sigma = I_d$ with each $X_i \sim N(0,I_d)$ for $i = 1, \cdots, n$.
-    * If the sample covariance converges to the identity matrix, then the vector of eigenvalues $\gamma (\hat{\Sigma})$ should converge to the all-ones vector. 
-    * However, as shown below, the histograms are highly dispersed around 1.
+    * **Setting:** suppose both $n$ and $d$ increase with their ratio $d/n=\alpha \in (0,1)$ remaining fixed. We run simulations for a random ensemble $\Sigma = I_d$ with each $X_i \sim N(0,I_d)$ for $i = 1, \cdots, n$.
+    * **Expected behavior:** If the sample covariance converges to the identity matrix, then the vector of eigenvalues $\gamma (\hat{\Sigma})$ should converge to the all-ones vector. 
+    * **Actual behavior:** However, as shown below, the histograms are highly dispersed around 1.
 
 
 <div style="text-align:center;">
@@ -112,3 +112,4 @@ $$log \, P[(X - \mu) \geq t] \leq \inf_{\lambda \in [0,b]} \{log \, E[e^{\lambda
 
 
 <!-- ### 2.1.2 *Sub-Gaussian variables* and *Hoeffding bounds* -->
+
