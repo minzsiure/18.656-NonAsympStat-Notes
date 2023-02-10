@@ -3,20 +3,20 @@
 ```
 Summary of lecture:
 
--- Discussion of course content, requirements, grading, and structure. 
-See the Syllabus page on Canvas for full details.
+1. Discussion of course content, requirements, grading, and structure. 
+* See the Syllabus page on Canvas for full details.
 
--- Motivation for non-asymptotic and/or high-dimensional analysis in statistics.  
+2. Motivation for non-asymptotic and/or high-dimensional analysis in statistics.  
 * Relevant reading:  Chapter 1 of HighDimStat.  
 * See Section 1.4 for more details on "three modes" of analysis.
 
--- More involved discussion using covariance estimation as a motivating example.  
-* See Section 1.2.2 for relevant details, and Figure 1.2 for Marcenko-Pastur law.  
-* See Section 1.3.2 for the possibility of structure in covariance matrices, 
-which we also covered.
+3. More involved discussion using `covariance estimation` as a motivating example.  
+* Section 1.2.2 for relevant details, 
+* Figure 1.2 for Marcenko-Pastur law.  
+* Section 1.3.2 for the possibility of structure in covariance matrices.
 
--- End of lecture: moved onto basic tail bounds in Chapter 2, 
-* covered part of Section 2.1.  
+4. End of lecture: moved onto basic tail bounds in Chapter 2, 
+* Partial Section 2.1.  
 * Please read ahead of Chapter 2; 
 we will cover large parts (but not all) of it, 
 but it is all extremely relevant and useful.
@@ -68,6 +68,8 @@ but it is all extremely relevant and useful.
 ## 1.3 What can help us in high dimension?
 ### 1.3.2 Structure in covariance matrices
 > <u>Overview:</u> What types of ***low-dimensional structure*** might be appropriate for modeling covariance matrices? And how can they can be exploited to construct better estimators?
+
+> The low-dimensional structure of matrices refers to the ways in which matrices can be characterized or represented using a smaller number of parameters or features. In other words, it refers to the finding of a low-dimensional representation of a matrix that captures its important characteristics. ie. SVD, matrix factorization.
 
 * **Example 1:** if the goal is to estimate a *diagonal* $\Sigma$, $\hat{\Sigma}$ can be improved by zeroing out the non-diagonal entries, leading to a diagonal covariance estimate $\hat{D}$.
 * **Example 2:** if $\Sigma$ were assumed to be *sparse* with unknown positions, we can have a hard-thresholded version of $\hat{\Sigma}$, $$\tilde{\Sigma}:=T_{\lambda_n}(\hat{\Sigma}), \text{ say with } \lambda_n = \sqrt{\frac{2 \, log \,d}{n}}$$
